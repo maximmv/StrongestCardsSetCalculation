@@ -1,7 +1,0 @@
-C:\Users\dev\source\repos\CARDS\CARDS\obj\Debug\CARDS.csprojAssemblyReference.cache
-C:\Users\dev\source\repos\CARDS\CARDS\obj\Debug\CARDS.csproj.CoreCompileInputs.cache
-C:\Users\dev\source\repos\CARDS\CARDS\bin\Debug\CARDS.exe.config
-C:\Users\dev\source\repos\CARDS\CARDS\bin\Debug\CARDS.exe
-C:\Users\dev\source\repos\CARDS\CARDS\bin\Debug\CARDS.pdb
-C:\Users\dev\source\repos\CARDS\CARDS\obj\Debug\CARDS.exe
-C:\Users\dev\source\repos\CARDS\CARDS\obj\Debug\CARDS.pdb

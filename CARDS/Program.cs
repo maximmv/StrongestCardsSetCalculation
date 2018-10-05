@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace CARDS
 {
-    public enum CardSuit
+    public enum CardSuit //Масть
     {
         Hearts = 3,
         Diamonds = 4,
         Clubs = 5,
         Spades = 6
     }
-    public enum CardValue
+    public enum CardValue // Значение карты
     {
         Six = 6,
         Seven = 7,
@@ -38,7 +38,7 @@ namespace CARDS
         }
        
 
-        public void OutputCard(int leftCurPosition)
+        public void OutputCard(int leftCurPosition)// метод вывода в консоль карты
         {
             string cardValue;
             string space = " ";
@@ -99,7 +99,7 @@ namespace CARDS
                     Cards[tmp++] = (new Card((CardSuit)suit, (CardValue)value));
             }
         }
-        public void Mix()
+        public void Mix() //Метод перетасовки колоды
         {
             Random rnd = new Random();
             Card tcard;
@@ -115,7 +115,7 @@ namespace CARDS
                 }
             }
         }
-        public Card  GetTrumpCard()
+        public Card  GetTrumpCard() //" вытаскивание " козыря из колоды
         {
             Random rnd = new Random();
             Card TrumpCard = Cards[rnd.Next() % 35];
@@ -188,7 +188,7 @@ namespace CARDS
                 players[i % playersQuan].PlayerDeck.Add(deck.Cards[i]);
             }
         }
-        public void GetCards()
+        public void GetCards()//вывод в консоль набора игроков
         {
             foreach (Player p in players)
             {
@@ -205,7 +205,7 @@ namespace CARDS
                 Console.CursorTop += 6;
             }
         }
-        public void CalculateStrong()
+        public void CalculateStrong() 
         {
             List<int> calculation = new List<int>();
             int sumValue = 0;
@@ -219,7 +219,8 @@ namespace CARDS
                 {
                     if (c.Suit == trumpCard.Suit)
                     {
-                        sumValue +=((int)c.Value + 9);                        
+                        sumValue +=((int)c.Value + 9); // Если карта козырная, то к  ее значению добавляем 9
+                                                        //т.к. козырная 6 бьет туза
                     }
                     else
                     {
